@@ -27,7 +27,15 @@ spec:
             config:
               authURL: "https://iam.eu-de.otc.t-systems.com:443/v3"
               region: "eu-de"
-              
+
+              # Optional: Override the OTC project (tenant) for DNS operations.
+              # If not set, the default project associated with the AK/SK credentials is used.
+              # tenant: "my-project"
+
+              # Optional: Override the OTC domain for authentication.
+              # If not set, the default domain associated with the AK/SK credentials is used.
+              # domainName: "my-domain"
+
               # Only for local testing, if no secrets are available.
               # accessKey: ACCESSKEY
               # secretKey: SECRETKEY

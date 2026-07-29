@@ -10,5 +10,7 @@
   "secretKeySecretRef": {
       "name": "otcdns-credentials",
       "key": "secretKey"
-  }
+  },
+  "tenant": "<OTC PROJECT NAME>",
+  "domainName": "<OTC DOMAIN NAME>"
 }

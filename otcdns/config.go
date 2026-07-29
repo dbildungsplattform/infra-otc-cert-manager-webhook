@@ -48,6 +48,12 @@ type OtcDnsConfig struct {
 	Region string `json:"region"`
 	//
 	AuthURL string `json:"authURL"`
+	// Tenant is the OTC project (tenant) name used for authentication.
+	// If not set, the default project associated with the AK/SK credentials is used.
+	Tenant string `json:"tenant"`
+	// DomainName is the OTC domain name used for authentication.
+	// If not set, the default domain associated with the AK/SK credentials is used.
+	DomainName string `json:"domainName"`
 }
 
 // The "config" part of the solver configuration is given to us with the ChallengeRequest
