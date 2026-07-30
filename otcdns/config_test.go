@@ -129,7 +129,7 @@ func TestOtcDnsConfig_StructFields(t *testing.T) {
 
 	// Verify secret ref selectors compile
 	_ = cmmeta1.SecretKeySelector{
-		Name: "test-secret",
-		Key:  "test-key",
+		LocalObjectReference: cmmeta1.LocalObjectReference{Name: "test-secret"},
+		Key:                  "test-key",
 	}
 }
