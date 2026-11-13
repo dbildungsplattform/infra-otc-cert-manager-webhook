@@ -9,6 +9,6 @@ concurrency:
 
 jobs:
   scan_helm:
-    uses: dBildungsplattform/dbp-github-workflows/.github/workflows/check-helm-kics.yaml@7
+    uses: dBildungsplattform/dbp-github-workflows/.github/workflows/check-helm-kics.yaml@ac540af7a37263a102c7bc6c8c9447a7b176f027 # 8.6.0
     permissions:
       contents: read
